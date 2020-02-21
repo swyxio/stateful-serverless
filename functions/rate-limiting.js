@@ -3,7 +3,12 @@ let firstInvoke = new Date();
 exports.handler = async (event, context) => {
   let currentInvoke = new Date();
   let diff = currentInvoke - firstInvoke;
-  if (diff < 5000) count += 1;
+  if (diff < 5000) {
+    count += 1;
+  } else {
+    count = 0;
+    firstInvoke = currentInvoke;
+  }
   if (count > 3) {
     return {
       statusCode: 429,
