@@ -1,13 +1,12 @@
 let abc = 0;
 exports.handler = async (event, context) => {
-  abc += 1;
   return new Promise((yay) => {
-    setTimeout(
+    setTimeout(() => {
+      abc += 1;
       yay({
         statusCode: 200,
         body: JSON.stringify({ message: `Hello, abc is ${abc}` })
-      }),
-      1000
-    );
+      });
+    }, 1000);
   });
 };
