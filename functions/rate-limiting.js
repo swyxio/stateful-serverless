@@ -6,7 +6,7 @@ exports.handler = async (event, context) => {
   if (diff < 5000) {
     count += 1;
   } else {
-    count = 0;
+    count = 1;
     firstInvoke = currentInvoke;
   }
   if (count > 3) {
