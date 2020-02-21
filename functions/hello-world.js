@@ -1,4 +1,4 @@
-let abc = 1;
+let abc = 0;
 exports.handler = async (event, context) => {
   abc += 1;
   return {
