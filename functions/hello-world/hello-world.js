@@ -1,4 +1,4 @@
-var abc = abc || 1;
+var abc = 1;
 exports.handler = async (event, context) => {
   try {
     abc += 1;
