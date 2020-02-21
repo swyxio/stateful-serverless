@@ -1,0 +1,7 @@
+{
+  "name": "statefulserverless",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "swyx <shawnthe1@gmail.com>",
+  "license": "MIT"
+}
